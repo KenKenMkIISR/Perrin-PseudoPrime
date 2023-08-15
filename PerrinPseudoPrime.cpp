@@ -3,7 +3,7 @@
 
 #include <iostream>
 
-#define ARRAYSIZE 15000 // ペラン数を格納する配列の要素数
+#define ARRAYSIZE 360000 // ペラン数を格納する配列の要素数
 #define RADIX 0x100000000 // 1要素の最大数+1（符号なし32ビット値）
 
 class Bignum
@@ -57,8 +57,8 @@ uint32_t Bignum::mod(uint32_t n) {
 
 class Bignum p1(3), p2(0), p3(2); // ペラン数列格納オブジェクトに初期値設定
 
-#define MAXNUM 1000000 // エラトステネスのふるいで計算する素数表の大きさ
-#define ROOTMAXNUM 1000 // MAXNUMの平方根
+#define MAXNUM 28000000 // エラトステネスのふるいで計算する素数表の大きさ
+#define ROOTMAXNUM 5292 // MAXNUMの平方根
 
 uint8_t primenum[MAXNUM / 8 + 1]; // 素数表（ビットフィールド、0が素数）
 
